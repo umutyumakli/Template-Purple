@@ -1,0 +1,328 @@
+body{
+background-image: url('assets/bg.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+/*Sign In*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    max-width: 450px;
+    margin: 200px auto;
+    padding: 20px 30px;
+    min-height: 300px;
+    background-color: #00000027;
+    border-top: 1px solid #ffffff6e;
+    border-left: 1px solid #ffffff6e;
+    border-radius: 15px
+}
+
+.wrapper .h5 {
+    color: rgb(255, 255, 255)
+}
+
+.wrapper .form-group {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 1.5rem
+}
+
+.wrapper .form-group:hover {
+    border-bottom: 1px solid rgb(255, 255, 255)
+}
+
+.wrapper .form-group .icon {
+    color: #ffffff
+}
+
+.wrapper .form-group .form-control {
+    background: inherit;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #ffffff
+}
+
+.wrapper .form-group input::placeholder {
+    color: rgb(255, 255, 255)
+}
+
+.wrapper .form-group input:focus::placeholder {
+    opacity: 0
+}
+
+.wrapper .form-group .fa-phone {
+    transform: rotate(90deg)
+}
+
+.wrapper .option {
+    color: rgb(255, 255, 255);
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none
+}
+
+.wrapper .option:hover {
+    color: rgb(255, 255, 255)
+}
+
+.wrapper .option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.wrapper .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: inherit;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2px
+}
+
+.wrapper .option input:checked~.checkmark {
+    transition: 300ms ease-in-out all
+}
+
+.wrapper .checkmark:after {
+    content: "\2713";
+    position: absolute;
+    display: none;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem
+}
+
+.wrapper .option input:checked~.checkmark:after {
+    display: block
+}
+
+.wrapper .option .checkmark:after {
+    left: 2px;
+    top: -4px;
+    width: 5px;
+    height: 10px
+}
+
+.wrapper .btn.btn-primary {
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: inherit;
+    box-shadow: none;
+    overflow: hidden
+}
+
+.wrapper .btn.btn-primary:hover {
+    background-color: #b4b4b433;
+    color: rgb(255, 255, 255)
+}
+
+.wrapper .terms {
+    color: rgb(255, 255, 255);
+    font-size: 0.85rem;
+    text-align: center
+}
+
+.wrapper .terms a {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+.wrapper .terms a:hover {
+    color: rgb(255, 93, 93)
+}
+
+.wrapper .connect {
+    position: relative
+}
+
+.wrapper .connect::after {
+    content: "or";
+    position: absolute;
+    top: -12px;
+    width: 80px;
+    left: 39%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.315);
+    background-color: #1f5588
+}
+@media(max-width: 460px) {
+    .wrapper {
+        margin: 15px;
+        padding: 20px
+    }
+
+    .wrapper .connect::after {
+        left: 38%
+    }
+}
+
+@media(max-width: 345px) {
+    .wrapper .connect::after {
+        left: 32%
+    }
+}
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+
+}
+    /*Sign In*/
+
+
+
+
+
+    /*Loading Bar*/
+
+.flexprogress {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .paddingprogress {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .paddingprogress {
+        padding: 1rem
+    }
+}
+
+.paddingprogress {
+    padding: 3rem
+}
+
+.cardprogress {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none
+}
+
+.cardprogress {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #3da5ff;
+    border-radius: 0;
+}
+
+.cardprogress .card-block {
+    padding: 1.25rem
+}
+
+h6 {
+    font-size: 16px !important
+}
+
+.text-c-green {
+    color: #2ed8b6
+}
+
+.m-l-10 {
+    margin-left: 10px
+}
+
+.proj-progress-card .progress {
+    height: 6px;
+    overflow: visible;
+    margin-bottom: 10px
+}
+
+.proj-progress-card .progress .progress-bar {
+    position: relative
+}
+
+.progress .progress-bar {
+    height: 100%;
+    color: inherit
+}
+
+.bg-c-red {
+    background: #FF5370
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-red:after {
+    border: 3px solid #FF5370
+}
+
+.proj-progress-card .progress .progress-bar:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    right: -6px;
+    top: -4px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px
+}
+
+.bg-c-blue {
+    background: #4099ff
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-blue:after {
+    border: 3px solid #4099ff
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-green:after {
+    border: 3px solid #2ed8b6
+}
+
+.bg-c-green {
+    background: #2ed8b6
+}
+
+.bg-c-yellow {
+    background: #FFB64D
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-yellow:after {
+    border: 3px solid #FFB64D
+}
+
+.m-b-30 {
+    margin-bottom: 30px
+}
+
+.text-c-red {
+    color: #FF5370
+}
+
+/*Loading Bar*/
+
+/**/
+
+
+/**/
+
